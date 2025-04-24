@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_room"
+    android:background="@drawable/button9">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tv_imgbg"
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:src="@drawable/light_circle"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_img"
+        app:layout_constraintEnd_toEndOf="@+id/tv_img"
+        app:layout_constraintStart_toStartOf="@id/tv_img"
+        app:layout_constraintTop_toTopOf="@+id/tv_img" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/tv_home"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/house2"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:tint="#DDFFFFFF"/>
+
+    <TextView
+        android:id="@+id/tv_tHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#FFFFFF"
+        android:text="Edit"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_tSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginStart="25dp"
+        android:shadowColor="#33CBCB"
+        android:text="Switch"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_tHome"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tHome" />
+
+    <ImageView
+        android:id="@+id/tv_logo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/hm"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_tHome"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <ImageButton
+        android:id="@+id/bt_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@null"
+        android:layout_marginStart="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#ffffff" />
+
+
+    <EditText
+        android:id="@+id/et_Title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Title"
+        android:textColorHint="#33CBCB"
+        android:textColor="#33CBCB"
+        android:drawableLeft="@drawable/baseline_title_24"
+        android:paddingStart="10dp"
+        android:background="@drawable/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/et_SubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="5sp"
+        android:background="@drawable/edt_backgroung"
+        android:drawableStart="@drawable/baseline_subtitles_24"
+        android:ems="10"
+        android:hint="SubTitle"
+        android:paddingStart="10dp"
+        android:textColor="#33CBCB"
+        android:textColorHint="#33CBCB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_Title" />
+
+    <ImageView
+        android:id="@+id/tv_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/light_off"
+        app:layout_constraintBottom_toTopOf="@+id/color_seek_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_SubTitle" />
+
+    <Switch
+        android:id="@+id/switchroom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Light is Off"
+        android:textColor="#8A8A8A"
+        android:theme="@style/SCBSwitch"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_home"
+        app:layout_constraintEnd_toEndOf="@+id/tv_img"
+        app:layout_constraintStart_toStartOf="@+id/tv_img" />
+
+    <com.rtugeek.android.colorseekbar.ColorSeekBar
+        android:id="@+id/color_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/switchroom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:showAlphaBar="true" />
+    <!--    -->
+    <!--    <codes.side.andcolorpicker.hsl.HSLColorPickerSeekBar-->
+    <!--        android:id="@+id/color_seek_bar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:hslColoringMode="pure"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:layout_marginStart="50dp"-->
+    <!--        app:hslMode="hue"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/tv_color" />-->
+
+    <!--    <codes.side.andcolorpicker.alpha.HSLAlphaColorPickerSeekBar-->
+    <!--        android:id="@+id/alphaSeekBar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="20dp"-->
+    <!--        android:layout_marginEnd="50dp"-->
+    <!--        android:layout_marginStart="50dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/color_seek_bar" />-->
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/bt_edit"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/circle_b"
+        android:src="@drawable/baseline_check_24"
+        android:contentDescription="add"
+        android:scaleType="fitXY"
+        android:padding="20dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

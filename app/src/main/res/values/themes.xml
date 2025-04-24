@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Home_switch" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- This is for enabling transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- Setting up enter exit transitions-->
+        <item name="android:windowEnterTransition">@transition/trans_anim</item>
+        <item name="android:windowExitTransition">@transition/trans_anim</item>
+    </style>
+
+    <style name="Theme.Home_switch" parent="Base.Theme.Home_switch" />
+</resources>

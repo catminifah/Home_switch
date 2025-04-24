@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "474867967581",
+    "firebase_url": "https://home-switch-e268e-default-rtdb.firebaseio.com",
+    "project_id": "home-switch-e268e",
+    "storage_bucket": "home-switch-e268e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474867967581:android:8b8b55301d45abea2c0fb4",
+        "android_client_info": {
+          "package_name": "com.example.home_switch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474867967581-p7u3469761lhrl0cg74k3ia8gjiu5msi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbmGYmqmTmAc3ZsL9mZAD7lw05RYhEn88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474867967581-fnqra7b0jj7s15aefphvcibpaltta0u6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,117 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.home_switch'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.home_switch"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures{
+
+        viewBinding true
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.2.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:22.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+    implementation 'androidx.core:core-ktx:+'
+    implementation 'androidx.core:core-ktx:+'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+    //ColorSeekbar
+    //implementation 'com.divyanshu.colorseekbar:colorseekbar:1.0'
+    //แก้กรรม maven { url 'https://jitpack.io' }
+    //https://stackoverflow.com/questions/69163511/build-was-configured-to-prefer-settings-repositories-over-project-repositories-b
+    implementation 'com.github.rtugeek:colorseekbar:1.7.2'
+    //implementation "codes.side:andcolorpicker:0.6.2"
+    //ep2 https://stackoverflow.com/questions/58013128/fix-dependency-resolution-errors-in-gradle
+    //rip colorseekbar
+    //implementation 'com.divyanshu.colorseekbar:colorseekbar:1.0.2'
+
+    //https://stackoverflow.com/questions/3285412/whats-the-best-way-to-limit-text-length-of-edittext-in-android
+    implementation 'com.google.android.material:material:1.1.0-alpha02'
+
+    //animation
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //room database
+    implementation 'androidx.room:room-ktx:2.5.1'
+    //annotationProcessor "androidx.room:room-compiler:2.5.1"
+    implementation "androidx.room:room-runtime:2.5.1"
+    kapt "androidx.room:room-compiler:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.1"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+
+    // Add the dependency for the Realtime Database library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-database-ktx'
+
+    //signing report not showing in android studio | how to generate sha-1 key in latest android studio
+    //https://www.youtube.com/watch?v=NJUiV-wDojc
+
+    //implementation 'com.facebook.android:facebook-login:latest.release'
+    //https://firebase.google.com/docs/auth/android/facebook-login?authuser=0
+    //https://www.youtube.com/watch?v=gOcMVmXS6Xs
+
+    implementation("com.android.volley:volley:1.2.0")
+    //https://google.github.io/volley/
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+
+    implementation 'com.google.firebase:firebase-auth:19.3.2'
+
+    //firebase storage
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    //Glide Dependency
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.1'
+
+}

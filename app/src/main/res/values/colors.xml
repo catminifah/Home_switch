@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    colorPrimary
+    <color name="colorPrimary">#FF33CBCB</color>
+    <color name="purple_light">#C297F8</color>
+    <color name="purple_dark">#975DE5</color>
+    <color name="green_light">#76CCBB</color>
+    <color name="green_dark">#1EBDAC</color>
+    <color name="pink_light">#F890BC</color>
+    <color name="pink_dark">#EB5595</color>
+    <color name="blue_light">#90C2F8</color>
+    <color name="blue_dark">#5591EB</color>
+
+    <array name="text_colors">
+        <item>#ffffff</item>
+        <item>#607D8B</item>
+        <item>#F44336</item>
+        <item>#9C27B0</item>
+        <item>#3F51B5</item>
+        <item>#03A9F4</item>
+        <item>#009688</item>
+        <item>#8BC34A</item>
+        <item>#FFEB3B</item>
+        <item>#FF9800</item>
+        <item>#795548</item>
+        <item>#9E9E9E</item>
+        <item>#000000</item>
+    </array>
+
+    <!--Switch Colors-->
+    <color name="disable_forground_grey">#42221f1f</color>
+    <color name="disable_thumb_grey">#1c000000</color>
+    <color name="enable_thumb_green">#46bdbf</color>
+
+</resources>

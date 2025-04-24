@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#33CBCB"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/iv_header"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/key"/>
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Reset Password"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_header"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_logout"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to\nReset Password?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_email"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+    <!--        android:text="Do you want to logout?"-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/button15"
+            android:textColor="#33CBCB"
+            android:text="YES"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/button15"
+            android:textColor="#33CBCB"
+            android:text="No"/>
+    </LinearLayout>
+
+</RelativeLayout>
