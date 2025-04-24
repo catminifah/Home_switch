@@ -56,9 +56,3 @@
 - ใช้ Dialog และ Animation ในการเปลี่ยนหน้าอย่างลื่นไหล
 - สามารถแก้ไขข้อมูลได้จากหน้าแสดงข้อมูลโดยตรง
 
-## 🧑‍💻 Technology Stack
-
-- **Language**: Kotlin
-- **IDE**: Android Studio
-- **Backend**: Firebase Authentication + Firebase Realtime Database
-- **UI Components**: ColorSeekBar, GridView, Dialog, Custom Animation
